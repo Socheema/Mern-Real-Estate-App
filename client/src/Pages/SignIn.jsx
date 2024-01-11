@@ -29,7 +29,7 @@ export default function SignIn() {
       dispatch(signInFailure(data.message));
       return;
     }
-    dispatch(signInSuccess(data.user));
+    dispatch(signInSuccess(data));
     navigate("/");
     console.log(data);
   };
